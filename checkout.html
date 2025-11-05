@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Pemesanan</h1>
+    <nav><a href="dashboard.html">Kembali</a></nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Form Pemesanan</h2>
+
+      <form id="orderForm">
+        
+        <h3>Informasi Pemesan</h3>
+        
+        <label for="custName">Nama</label>
+        <input id="custName" required>
+
+        <label for="custEmail">Email</label>
+        <input id="custEmail" type="email" required>
+
+        <label for="custAddress">Alamat</label>
+        <textarea id="custAddress" required></textarea>
+        
+
+        <h3>Detail Pesanan</h3>
+        
+        <label for="selectBook">Pilih Buku</label>
+        <select id="selectBook"></select>
+
+        <label for="quantity">Jumlah</label>
+        <input id="quantity" type="number" min="1" value="1" required>
+
+        <button id="addItem" type="button">Tambah ke Keranjang</button>
+        
+
+        <section>
+          <h3>Keranjang</h3>
+          <table id="cartTable">
+            <thead><tr><th>#</th><th>Buku</th><th>Jumlah</th><th>Harga</th><th>Aksi</th></tr></thead>
+            <tbody></tbody>
+          </table>
+          <p id="totalPrice">Total: Rp 0</p>
+        </section>
+
+        <button type="submit">Checkout</button>
+      
+      </form>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

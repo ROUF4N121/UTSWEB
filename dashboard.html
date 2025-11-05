@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Toko Buku</h1>
+    <nav aria-label="Main Menu">
+      <ul>
+        <li><span id="userRoleIndicator" style="margin-right: 15px; font-size: 1.1em;"></span></li>
+        <li><a href="#" id="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="greeting">
+      <h2 id="greeting">Halo</h2>
+      <p id="greeting-sub">Selamat datang!</p>
+    </section>
+
+    <section>
+      <h3>Menu Cepat</h3>
+    
+      <div class="catalog"> 
+      
+      <article class="card">
+        <h4><a href="stok.html" style="text-decoration: none; color: inherit;">
+          Informasi Stok/Katalog
+        </a></h4>
+        <p class="small-muted">Lihat, tambah, atau edit daftar buku yang tersedia.</p>
+      </article>
+
+      <article class="card">
+        <h4><a href="checkout.html" style="text-decoration: none; color: inherit;">
+          Form Pemesanan
+        </a></h4>
+        <p class="small-muted">Mulai proses pemesanan dan checkout buku.</p>
+      </article>
+
+      <article class="card">
+        <h4><a href="tracking.html" style="text-decoration: none; color: inherit;">
+          Tracking Pengiriman
+        </a></h4>
+        <p class="small-muted">Lacak status pesanan dan pengiriman buku.</p>
+      </article>
+
+      <article class="card">
+        <h4><a href="#" style="text-decoration: none; color: inherit;">
+          Laporan Pemesanan
+        </a></h4>
+        <p class="small-muted">Lihat data penjualan dan laporan pemesanan buku.</p>
+      </article>
+
+      <article class="card">
+        <h4><a href="#" style="text-decoration: none; color: inherit;">
+          History Transaksi
+        </a></h4>
+        <p class="small-muted">Rekam jejak semua transaksi yang telah selesai.</p>
+      </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

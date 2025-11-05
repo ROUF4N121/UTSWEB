@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tracking Pengiriman — Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Tracking Pengiriman</h1>
+    <nav><a href="dashboard.html">Kembali</a></nav>
+  </header>
+
+  <main class="container">
+    <form id="trackForm">
+      <label for="doNumber">Nomor DO</label>
+      <input id="doNumber" required>
+      <button type="submit">Cari</button>
+    </form>
+
+    <section id="trackResult" aria-live="polite"></section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

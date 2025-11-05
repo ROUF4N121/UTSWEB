@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stok / Katalog — Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Stok / Katalog</h1>
+    <nav><a href="dashboard.html">Kembali</a></nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Daftar Buku</h2>
+      <div id="catalog" class="catalog"></div>
+    </section>
+
+    <section aria-labelledby="add-heading" id="addStockSection">
+      <h2 id="add-heading">Tambah Stok Baru</h2>
+      <form id="addStockForm">
+        <label for="kode">Kode Barang</label>
+        <input id="kode" required>
+
+        <label for="nama">Nama Barang</label>
+        <input id="nama" required>
+
+        <label for="jenis">Jenis</label>
+        <input id="jenis" required>
+
+        <label for="edisi">Edisi</label>
+        <input id="edisi" required>
+
+        <label for="stok">Stok</label>
+        <input id="stok" type="number" min="0" required>
+
+        <label for="harga">Harga</label>
+        <input id="harga" required>
+
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
